@@ -1,0 +1,193 @@
+header {
+    font-family:'Courier New', Courier, monospace;
+    background-color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 100px;
+}
+
+.header-title {
+    font-size: 45pt;
+    color: black;
+}
+
+.header-button {
+    font-family:'Courier New', Courier, monospace;
+    background-color: lightslategray;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.5s;
+    z-index: 1;
+    border-radius: 15px;
+}
+
+.header-button:hover {
+    color: white;
+}
+
+.header-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.1s;
+    z-index: -1;
+}
+
+.header-button:hover:before {
+    transform: scaleX(1);
+}
+
+footer {
+    font-family:'Courier New', Courier, monospace;
+    background-color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 50px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-title {
+    font-size: 30pt;
+    color: black;
+}
+
+.footer-item {
+    padding: 8px;
+}
+
+
+html, body, p {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16pt;
+    color: white;
+}
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background-image: url('assets/BannerImage.png');
+    background-attachment: fixed; /* Add this line */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    background-color: black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 32pt;
+    color: white;
+    text-align: center;
+}
+
+.home-about-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.home-about-item {
+    flex: 2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.fade {
+    animation: fade 5s infinite;
+    -webkit-animation: fade 5s infinite;
+}
+
+@keyframes fade {
+    0% {opacity: .4}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: .4}
+    100% {opacity: 1}
+}
+
+.cube-survive-overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+.github-repo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.github-repo-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+
+h2 {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20pt;
+    color: white;
+    text-align: center;
+}
